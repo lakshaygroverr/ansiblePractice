@@ -1,0 +1,13 @@
+---
+- name: Refere variable from file
+  hosts: centos
+  vars_files:
+    - vars/packages.yaml
+  tasks:
+    - name: Check of python is installed in managed nodes
+      ansible.builtin.ping:
+
+    - name: Remove packages
+      ansible.builtin.dnf:
+        name: "{{ git_package }}"
+        state: absent
