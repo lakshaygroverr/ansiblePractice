@@ -1,0 +1,16 @@
+---
+- name: Demonstrate ignore_errors in playbook
+  hosts: centos
+  tasks:
+    - name: Print a fact variable
+      ansible.builtin.debug:
+        var: ansible_Facts['distribution']
+        msg: "{{ testing }}"
+      ignore_errors: true
+      register: result
+      failed_when: >
+        "'The task includes an option with an undefined
+          variable' in result.msg"
+    - name: Display a message
+      ansible.builtin.debug:
+        msg: This task ran successfully

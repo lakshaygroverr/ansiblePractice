@@ -13,4 +13,6 @@
   tasks:
     - name: Display distribution
       ansible.builtin.debug:
-        msg: "The distribution for {{  inventory_hostname }} is {{ ansible_facts['distribution'] }} and python version is {{ ansible_facts['python_version'] }}"
+        msg: >
+          The distribution for {{  inventory_hostname }} is {{ ansible_facts['distribution'] }} and 
+          python version is {{ ansible_facts['python_version'] }}
