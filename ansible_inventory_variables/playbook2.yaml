@@ -1,18 +1,20 @@
 ---
-- name: create folders in centos group
+- name: Create folders in centos group
   hosts: centos
   tasks:
     - name: Check of python is installed in managed nodes
       ansible.builtin.ping:
 
-    - name: create a folder
+    - name: Create a folder
       ansible.builtin.file:
         path: /home/student/{{ folder_name }}
         state: directory
-- name: create a file in testing folder
+        mode: "0755"
+- name: Create a file in testing folder
   hosts: centos
   tasks:
-     - name: create a file
-       ansible.builtin.file:
-         path: /home/student/{{ folder_name }}/{{ file_name }}
-         state: touch
+    - name: Create a file
+      ansible.builtin.file:
+        path: /home/student/{{ folder_name }}/{{ file_name }}
+        state: touch
+        mode: "0644"
