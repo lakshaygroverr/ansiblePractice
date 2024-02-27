@@ -7,4 +7,4 @@
         iburst: true
         pool: true
   roles:
-    - redhat.rhel_system_roles.timesync
+    - web

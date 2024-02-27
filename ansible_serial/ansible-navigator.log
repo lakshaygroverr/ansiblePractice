@@ -1,0 +1,8 @@
+2024-02-25T18:14:22.884009+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '12bd5f46-a0cf-432c-87bf-934987ce0726', 'counter': 1, 'stdout': '', 'start_line': 0, 'end_line': 1, 'runner_ident': 'c7419fa8-35ea-41fc-9440-31145a145f61', 'created': '2024-02-25T18:14:22.879714'}
+2024-02-25T18:14:22.884523+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'f0bf481b-cce5-41ec-8c10-f941047501a4', 'counter': 2, 'stdout': 'playbook: /home/student/ansible_examples/ansible_serial/playbook2.yaml', 'start_line': 1, 'end_line': 2, 'runner_ident': 'c7419fa8-35ea-41fc-9440-31145a145f61', 'created': '2024-02-25T18:14:22.879879'}
+2024-02-25T18:18:45.519285+00:00 ERROR 'ansible_navigator.actions.run_d3bb.run' Can not step back while playbook in progress, :q! to exit
+2024-02-25T18:18:46.548790+00:00 ERROR 'ansible_navigator.actions.run_d3bb.run' Can not step back while playbook in progress, :q! to exit
+2024-02-25T18:18:51.835372+00:00 ERROR 'ansible_navigator.actions.run_d3bb.run' Can not step back while playbook in progress, :q! to exit
+2024-02-25T18:18:52.852464+00:00 ERROR 'ansible_navigator.actions.run_d3bb.run' Can not step back while playbook in progress, :q! to exit
+2024-02-25T18:18:53.135210+00:00 ERROR 'ansible_navigator.actions.run_d3bb.run' Can not step back while playbook in progress, :q! to exit
+2024-02-25T18:18:53.494831+00:00 ERROR 'ansible_navigator.actions.run_d3bb.run' Can not step back while playbook in progress, :q! to exit
