@@ -1,0 +1,9 @@
+---
+- name: Demostrate delegate to
+  hosts: centos
+  gather_facts: false
+  tasks:
+    - name: use delegate_to
+      ansible.builtin.debug:
+        msg: "running delegate to"
+      delegate_to: 127.0.0.1

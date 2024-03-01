@@ -1,0 +1,8 @@
+---
+- name: Demostrate delegate to
+  hosts: centos
+  gather_facts: false
+  tasks:
+    - name: gather_facts
+      ansible.builtin.setup:
+      delegate_to: localhost
